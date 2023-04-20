@@ -132,7 +132,7 @@ def get_indices_entire_sequence(data: pd.DataFrame, window_size: int, step_size:
         return indices
 
 
-def read_data(data_dir: Union[str, Path] = "data",  
+def read_data(data_dir: Union[str, Path] = "/content/influenza_transformer/data",  
     timestamp_col_name: str="timestamp") -> pd.DataFrame:
     """
     Read data from csv file and return pd.Dataframe object
