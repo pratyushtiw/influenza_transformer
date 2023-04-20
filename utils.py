@@ -150,6 +150,9 @@ def read_data(data_dir: Union[str, Path] = "/content/influenza_transformer/data"
 
     # Ensure that `data_dir` is a Path object
     data_dir = Path(data_dir)
+    print(data_dir)
+
+
 
     # Read csv file
     csv_files = list(data_dir.glob("*.csv"))
