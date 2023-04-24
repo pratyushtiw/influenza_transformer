@@ -40,6 +40,7 @@ in_features_encoder_linear_layer = 2048
 in_features_decoder_linear_layer = 2048
 max_seq_len = enc_seq_len
 batch_first = False
+lr = 0.001
 
 # Define input variables 
 exogenous_vars = [] # should contain strings. Each string must correspond to a column name
@@ -115,3 +116,5 @@ output = model(
     src_mask=src_mask,
     tgt_mask=tgt_mask
     )
+
+optimizer = torch.optim.Adam(model.parameters, lr=lr)
