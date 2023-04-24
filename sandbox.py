@@ -117,4 +117,5 @@ output = model(
     tgt_mask=tgt_mask
     )
 
+print(output)
 optimizer = torch.optim.Adam(model.parameters, lr=lr)
